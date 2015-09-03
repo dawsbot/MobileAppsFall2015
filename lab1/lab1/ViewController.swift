@@ -16,11 +16,14 @@ class ViewController: UIViewController {
  
     @IBAction func chooseHackathon(sender: UIButton) {
         if sender.tag == 1 {
-            HackathonLogo.image = UIImage(named: "Image-2.png")
+            HackathonLogo.image = UIImage(named: "HackCU.png")
             messageText.text = "Boulder, CO"
-        } else {
-            HackathonLogo.image = UIImage(named: "Image-1.png")
+        } else if sender.tag == 2 {
+            HackathonLogo.image = UIImage(named: "HackGT.png")
             messageText.text = "Atlanta, GA"
+        } else {//sender.tag == 3
+            HackathonLogo.image = UIImage(named: "MHacks.png")
+            messageText.text = "Ann Arbor, MI"
         }
     }
     override func viewDidLoad() {
