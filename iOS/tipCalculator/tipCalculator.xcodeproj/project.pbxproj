@@ -156,6 +156,8 @@
 		CDBB99371BAB14C50080ABED /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Dawson Botsford";
 				TargetAttributes = {
@@ -409,6 +411,7 @@
 				CDBB99601BAB14C50080ABED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CDBB99611BAB14C50080ABED /* Build configuration list for PBXNativeTarget "tipCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +420,7 @@
 				CDBB99631BAB14C50080ABED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
