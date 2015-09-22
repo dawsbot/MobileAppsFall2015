@@ -22,7 +22,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
     func updateTipTotal() {
         let amount = (checkAmount.text as NSString).floatValue
         let pct = (tipPercent.text as NSString).floatValue/100
-        let numberOfPeople = people.text.toInt()
+        let numberOfPeople = Int(people.text)
         let tip = amount * pct
         let total = amount + tip
         var personTotal : Float = 0.0

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lab3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Dawson" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qch-Zl-W0o">
+                                <rect key="frame" x="44" y="98" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="Obi-mk-7uE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="21" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kvh-VU-4Mc">
+                                <rect key="frame" x="44" y="239" width="97" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Uw-qb-JI9">
+                                <rect key="frame" x="44" y="59" width="84" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="L3n-l9-Nbw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44E-PU-sUs">
+                                <rect key="frame" x="44" y="199" width="69" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="WaV-F9-EOE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kce-5L-WhD">
+                                <rect key="frame" x="193" y="159" width="48" height="30"/>
+                                <state key="normal" title="Ship it!"/>
+                                <connections>
+                                    <action selector="alertMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y1H-kI-lxX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="44E-PU-sUs" firstAttribute="leading" secondItem="qch-Zl-W0o" secondAttribute="leading" id="1Rd-aw-SF4"/>
+                            <constraint firstItem="Kce-5L-WhD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="193" id="7H7-Mt-gmM"/>
+                            <constraint firstItem="0Uw-qb-JI9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="Gfe-3e-Lkd"/>
+                            <constraint firstItem="qch-Zl-W0o" firstAttribute="top" secondItem="0Uw-qb-JI9" secondAttribute="bottom" constant="18" id="H4e-Vd-gE7"/>
+                            <constraint firstItem="Kce-5L-WhD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="139" id="OKu-Vc-FSA"/>
+                            <constraint firstItem="Kvh-VU-4Mc" firstAttribute="top" secondItem="44E-PU-sUs" secondAttribute="bottom" constant="19" id="OcI-gn-Qn3"/>
+                            <constraint firstItem="44E-PU-sUs" firstAttribute="top" secondItem="qch-Zl-W0o" secondAttribute="bottom" constant="71" id="RGt-Jg-0zo"/>
+                            <constraint firstItem="0Uw-qb-JI9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="lPH-OT-ljn"/>
+                            <constraint firstItem="0Uw-qb-JI9" firstAttribute="leading" secondItem="qch-Zl-W0o" secondAttribute="leading" id="qpQ-VC-rEH"/>
+                            <constraint firstItem="Kvh-VU-4Mc" firstAttribute="leading" secondItem="44E-PU-sUs" secondAttribute="leading" id="rir-mk-13G"/>
+                            <constraint firstItem="Kvh-VU-4Mc" firstAttribute="trailing" secondItem="qch-Zl-W0o" secondAttribute="trailing" id="ssf-5V-X52"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="yourAge" destination="Kvh-VU-4Mc" id="e3o-7Y-Qz5"/>
+                        <outlet property="yourName" destination="qch-Zl-W0o" id="Beu-Mt-lR4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
