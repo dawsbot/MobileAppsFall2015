@@ -10,9 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var firstIcon: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        firstIcon.setTitle("\u{f081}", forState: .Normal)
+        
     }
 
     override func didReceiveMemoryWarning() {
