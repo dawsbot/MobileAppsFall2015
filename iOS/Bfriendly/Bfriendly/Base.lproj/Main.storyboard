@@ -130,7 +130,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Bfriendly" id="jd6-nU-Qen"/>
                     <connections>
+                        <outlet property="emailField" destination="b3k-Y0-COH" id="f0G-iX-4AZ"/>
                         <outlet property="firstIcon" destination="1xL-37-fH1" id="a4d-O4-EV5"/>
+                        <outlet property="nameField" destination="Jf1-VM-iIK" id="ok7-Fe-GIl"/>
+                        <outlet property="phoneNumberField" destination="mHH-Co-0w2" id="G9W-UI-vnX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5UX-ZN-aNu" userLabel="First Responder" sceneMemberID="firstResponder"/>
