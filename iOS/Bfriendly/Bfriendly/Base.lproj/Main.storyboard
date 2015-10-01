@@ -8,6 +8,7 @@
         <mutableArray key="fontawesome-webfont.ttf">
             <string>FontAwesome</string>
             <string>FontAwesome</string>
+            <string>FontAwesome</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -23,55 +24,109 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9al-9r-W8l">
-                                <rect key="frame" x="43" y="177" width="45" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gay-zb-fyx">
-                                <rect key="frame" x="47" y="229" width="41" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hF-se-2YA">
-                                <rect key="frame" x="39" y="283" width="49" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jf1-VM-iIK">
-                                <rect key="frame" x="167" y="168" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jf1-VM-iIK">
+                                <rect key="frame" x="209" y="141" width="183" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="A9o-eB-a1X"/>
+                                    <constraint firstAttribute="width" constant="183" id="e38-7R-3WO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b3k-Y0-COH">
-                                <rect key="frame" x="167" y="220" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b3k-Y0-COH">
+                                <rect key="frame" x="209" y="193" width="183" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Lj9-eX-TQ0"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mHH-Co-0w2">
-                                <rect key="frame" x="167" y="274" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mHH-Co-0w2">
+                                <rect key="frame" x="209" y="247" width="183" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="33U-JY-rZ6"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVg-xb-VOG">
-                                <rect key="frame" x="190" y="512" width="50" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVg-xb-VOG">
+                                <rect key="frame" x="275" y="498" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="f0z-p3-DNk"/>
+                                </constraints>
                                 <state key="normal" title="Bfriend"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xL-37-fH1">
-                                <rect key="frame" x="193" y="321" width="44" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xL-37-fH1">
+                                <rect key="frame" x="278" y="307" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="H1P-BF-Vmo"/>
+                                    <constraint firstAttribute="width" constant="44" id="JY5-Ga-0Gy"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="47"/>
                                 <state key="normal" title=""/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVo-GJ-ZB3">
-                                <rect key="frame" x="193" y="382" width="44" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVo-GJ-ZB3">
+                                <rect key="frame" x="278" y="366" width="44" height="48"/>
                                 <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="47"/>
                                 <state key="normal" title=""/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9r-Sd-s2A">
+                                <rect key="frame" x="278" y="430" width="44" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="K33-QO-QTj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="47"/>
+                                <state key="normal" title=""/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XVo-GJ-ZB3" firstAttribute="top" secondItem="1xL-37-fH1" secondAttribute="bottom" constant="15" id="1tB-hi-cth"/>
+                            <constraint firstItem="XVo-GJ-ZB3" firstAttribute="leading" secondItem="o9r-Sd-s2A" secondAttribute="leading" id="28E-NE-NeX"/>
+                            <constraint firstItem="mHH-Co-0w2" firstAttribute="top" secondItem="b3k-Y0-COH" secondAttribute="bottom" constant="24" id="2Me-14-1Z8"/>
+                            <constraint firstItem="mHH-Co-0w2" firstAttribute="trailing" secondItem="b3k-Y0-COH" secondAttribute="trailing" id="5kT-IK-eZJ"/>
+                            <constraint firstItem="e0B-p8-8CO" firstAttribute="top" secondItem="jVg-xb-VOG" secondAttribute="bottom" constant="72" id="6JD-cq-cG1"/>
+                            <constraint firstItem="mHH-Co-0w2" firstAttribute="leading" secondItem="b3k-Y0-COH" secondAttribute="leading" id="EgH-0A-94E"/>
+                            <constraint firstItem="b3k-Y0-COH" firstAttribute="leading" secondItem="Jf1-VM-iIK" secondAttribute="leading" id="Fgy-Nj-hS8"/>
+                            <constraint firstItem="1xL-37-fH1" firstAttribute="trailing" secondItem="XVo-GJ-ZB3" secondAttribute="trailing" id="KNa-qI-RkH"/>
+                            <constraint firstItem="o9r-Sd-s2A" firstAttribute="top" secondItem="XVo-GJ-ZB3" secondAttribute="bottom" constant="16" id="MdM-Zc-Snt"/>
+                            <constraint firstItem="Jf1-VM-iIK" firstAttribute="centerX" secondItem="kbP-7J-IfV" secondAttribute="centerX" constant="0.5" id="QZZ-nB-2Lm"/>
+                            <constraint firstItem="o9r-Sd-s2A" firstAttribute="centerX" secondItem="jVg-xb-VOG" secondAttribute="centerX" id="T2w-mw-2q8"/>
+                            <constraint firstItem="Jf1-VM-iIK" firstAttribute="top" secondItem="VJi-2a-lZw" secondAttribute="bottom" constant="77" id="THj-FW-uVA"/>
+                            <constraint firstItem="XVo-GJ-ZB3" firstAttribute="top" secondItem="1xL-37-fH1" secondAttribute="bottom" constant="15" id="TNK-k7-qxQ"/>
+                            <constraint firstItem="1xL-37-fH1" firstAttribute="top" secondItem="mHH-Co-0w2" secondAttribute="bottom" constant="30" id="U7Y-z3-a3s"/>
+                            <constraint firstItem="XVo-GJ-ZB3" firstAttribute="centerX" secondItem="kbP-7J-IfV" secondAttribute="centerX" id="aS8-FI-4ny"/>
+                            <constraint firstItem="1xL-37-fH1" firstAttribute="leading" secondItem="XVo-GJ-ZB3" secondAttribute="leading" id="bAL-39-PvP"/>
+                            <constraint firstItem="1xL-37-fH1" firstAttribute="leading" secondItem="XVo-GJ-ZB3" secondAttribute="leading" id="cnB-De-Etc"/>
+                            <constraint firstItem="o9r-Sd-s2A" firstAttribute="centerX" secondItem="kbP-7J-IfV" secondAttribute="centerX" id="dMB-rH-08B"/>
+                            <constraint firstItem="Jf1-VM-iIK" firstAttribute="leading" secondItem="kbP-7J-IfV" secondAttribute="leading" constant="124" id="fBH-7J-KQg"/>
+                            <constraint firstItem="XVo-GJ-ZB3" firstAttribute="leading" secondItem="o9r-Sd-s2A" secondAttribute="leading" id="fZQ-e7-YUP"/>
+                            <constraint firstItem="XVo-GJ-ZB3" firstAttribute="trailing" secondItem="1xL-37-fH1" secondAttribute="trailing" id="faX-fZ-ydi"/>
+                            <constraint firstItem="XVo-GJ-ZB3" firstAttribute="trailing" secondItem="o9r-Sd-s2A" secondAttribute="trailing" id="fu4-Gp-BOB"/>
+                            <constraint firstItem="b3k-Y0-COH" firstAttribute="top" secondItem="Jf1-VM-iIK" secondAttribute="bottom" constant="22" id="g5S-hW-nYK"/>
+                            <constraint firstItem="mHH-Co-0w2" firstAttribute="centerX" secondItem="1xL-37-fH1" secondAttribute="centerX" constant="0.5" id="hIL-a7-SuT"/>
+                            <constraint firstItem="jVg-xb-VOG" firstAttribute="top" secondItem="o9r-Sd-s2A" secondAttribute="bottom" constant="22" id="l26-te-TNW"/>
+                            <constraint firstItem="XVo-GJ-ZB3" firstAttribute="top" secondItem="1xL-37-fH1" secondAttribute="bottom" constant="15" id="lg9-9b-O8G"/>
+                            <constraint firstItem="o9r-Sd-s2A" firstAttribute="top" secondItem="XVo-GJ-ZB3" secondAttribute="bottom" constant="16" id="ndK-df-OYd"/>
+                            <constraint firstItem="b3k-Y0-COH" firstAttribute="trailing" secondItem="Jf1-VM-iIK" secondAttribute="trailing" id="qIw-FK-Ctc"/>
+                            <constraint firstItem="o9r-Sd-s2A" firstAttribute="top" secondItem="XVo-GJ-ZB3" secondAttribute="bottom" constant="16" id="r5I-9z-9mv"/>
+                            <constraint firstItem="XVo-GJ-ZB3" firstAttribute="top" secondItem="1xL-37-fH1" secondAttribute="bottom" constant="15" id="sOw-wt-xvJ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="fBH-7J-KQg"/>
+                                <exclude reference="hIL-a7-SuT"/>
+                                <exclude reference="KNa-qI-RkH"/>
+                                <exclude reference="cnB-De-Etc"/>
+                                <exclude reference="1tB-hi-cth"/>
+                                <exclude reference="TNK-k7-qxQ"/>
+                                <exclude reference="fZQ-e7-YUP"/>
+                                <exclude reference="fu4-Gp-BOB"/>
+                                <exclude reference="lg9-9b-O8G"/>
+                                <exclude reference="MdM-Zc-Snt"/>
+                                <exclude reference="ndK-df-OYd"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Bfriendly" id="jd6-nU-Qen"/>
                     <connections>
