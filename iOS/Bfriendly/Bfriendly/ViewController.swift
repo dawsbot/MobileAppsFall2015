@@ -16,7 +16,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        firstIcon.setTitle("\u{f081}", forState: .Normal)
         
     }
 
