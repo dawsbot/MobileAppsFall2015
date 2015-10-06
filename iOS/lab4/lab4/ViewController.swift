@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         if imageView.center.x > view.bounds.size.width - ballRadius || imageView.center.x < ballRadius {
             delta.x = -delta.x
         }
-        if imageView.center.y > view.bounds.size.width - ballRadius || imageView.center.y < ballRadius {
+        if imageView.center.y > view.bounds.size.height - ballRadius || imageView.center.y < ballRadius {
             delta.y = -delta.y
         }
     }
