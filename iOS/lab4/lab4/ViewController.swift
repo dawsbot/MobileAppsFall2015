@@ -27,7 +27,15 @@ class ViewController: UIViewController {
     }
     
     func moveImage() {
-        imageView.center = CGPointMake(imageView.center.x + delta.x, imageView.center.y + delta.y)
+        
+        let duration = Double(slider.value)
+        UIView.beginAnimations("bball", context: nil)
+        
+        UIView.animateWithDuration(duration, animations: {self.imageView.center=CGPointMake(self.imageView.center.x + self.delta.x, self.imageView.center.y + self.delta.y)})
+        
+        UIView.commitAnimations()
+        
+        //imageView.center = CGPointMake(imageView.center.x + delta.x, imageView.center.y + delta.y)
         
         if imageView.center.x > view.bounds.size.width - ballRadius || imageView.center.x < ballRadius {
             delta.x = -delta.x
