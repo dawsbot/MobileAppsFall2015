@@ -7,7 +7,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var delta = CGPointMake(20, 0) //initialize the delta to move 12 pixels horizontally, 4 pixels vertically
+    var delta = CGPointMake(0, 10) //initialize the delta to move 0 pixels horizontally, 10 pixels vertically
     var ballRadius = CGFloat() //radius of the ball image
     var timer = NSTimer() //animation timer
     var translation = CGPointMake(0.0, 0.0) //specifies how many pixels the image will move
@@ -47,12 +47,12 @@ class ViewController: UIViewController {
     //updates the timer and label with the current slider value
     @IBAction func changeSliderValue() {
         sliderLabel.text=String(format: "%.2f", slider.value)
-        timer = NSTimer.scheduledTimerWithTimeInterval(Double(slider.value / 6), target: self, selector: "moveImage", userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(Double(slider.value / 14), target: self, selector: "moveImage", userInfo: nil, repeats: true)
     }
     
     override func viewDidLoad() {
         //ball radius is half the width of the image
-        ballRadius=imageView.frame.size.width/2
+        ballRadius=imageView.frame.size.width/3
         changeSliderValue()
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
