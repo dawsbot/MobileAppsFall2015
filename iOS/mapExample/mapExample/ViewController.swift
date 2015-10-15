@@ -13,12 +13,19 @@ import MapKit
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
     var locationManager = CLLocationManager()
+    var annotation = MKPointAnnotation()
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let span = MKCoordinateSpanMake(0.05 , 0.05)
         let region = MKCoordinateRegionMake(manager.location!.coordinate, span)
         
         mapView.setRegion(region, animated: true)
+        
+        
+        annotation.coordinate=(manager.location?.coordinate)!
+        annotation.title="We found you!"
+        annotation.subtitle="Lat:\(manager.location!.coordinate.latitude), Long:\(manager.location!.coordinate.longitude)"
+        mapView.addAnnotation(annotation)
         
     }
     
@@ -63,20 +70,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.distanceFilter=kCLDistanceFilterNone
         mapView.showsUserLocation=true
         
-        
-        
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        //let location = CLLocationCoordinate2D(latitude: 40.74836, longitude: 73.984607)
-          //      let annotation = MKPointAnnotation()
-        
-        //annotation.coordinate = location
-        //annotation.title = "Empire State Building"
-        
-        //annotation.subtitle = "NY"
-        //mapView.addAnnotation(annotation)
-        
-        //MKMapType.Standard
+      
         mapView.mapType = MKMapType.Satellite
         super.viewDidLoad()
         

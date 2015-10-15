@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lab7" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPO-s4-UNQ">
+                                <rect key="frame" x="276" y="134" width="49" height="30"/>
+                                <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="recordAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KCd-OV-K8w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXe-oz-nte">
+                                <rect key="frame" x="284" y="253" width="32" height="30"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0s8-Fz-SKH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHq-s6-Xbc">
+                                <rect key="frame" x="285" y="192" width="30" height="30"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uqJ-jq-3WG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GPO-s4-UNQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="114" id="Aud-Jf-4rh"/>
+                            <constraint firstItem="GPO-s4-UNQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B6m-Rc-AwM"/>
+                            <constraint firstItem="tHq-s6-Xbc" firstAttribute="centerX" secondItem="BXe-oz-nte" secondAttribute="centerX" id="kJQ-Ur-Jqy"/>
+                            <constraint firstItem="tHq-s6-Xbc" firstAttribute="top" secondItem="GPO-s4-UNQ" secondAttribute="bottom" constant="28" id="n9Y-oD-W66"/>
+                            <constraint firstItem="BXe-oz-nte" firstAttribute="top" secondItem="tHq-s6-Xbc" secondAttribute="bottom" constant="31" id="p9L-hL-J81"/>
+                            <constraint firstItem="tHq-s6-Xbc" firstAttribute="centerX" secondItem="GPO-s4-UNQ" secondAttribute="centerX" id="svi-M2-W1J"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playButton" destination="tHq-s6-Xbc" id="eDL-wo-3FU"/>
+                        <outlet property="recordButton" destination="GPO-s4-UNQ" id="85Z-YM-RI5"/>
+                        <outlet property="stopButton" destination="BXe-oz-nte" id="q8E-BO-qVz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
