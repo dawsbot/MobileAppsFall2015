@@ -8,13 +8,22 @@
 
 import UIKit
 
-class secondViewController: UIViewController {
+class secondViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var userBook: UITextField!
+    @IBOutlet weak var userAuthor: UITextField!
+  
     override func viewDidLoad() {
+        userBook.delegate=self
+        userAuthor.delegate=self
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
