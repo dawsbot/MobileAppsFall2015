@@ -34,17 +34,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CD5289F91BCD5B340042DC4C /* gestures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gestures.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5289F91BCD5B340042DC4C /* lab6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lab6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5289FC1BCD5B340042DC4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD5289FE1BCD5B340042DC4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD528A011BCD5B340042DC4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD528A031BCD5B340042DC4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD528A061BCD5B340042DC4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD528A081BCD5B340042DC4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD528A0D1BCD5B340042DC4C /* gesturesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gesturesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD528A0D1BCD5B340042DC4C /* lab6.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lab6.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD528A111BCD5B340042DC4C /* gesturesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gesturesTests.swift; sourceTree = "<group>"; };
 		CD528A131BCD5B340042DC4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD528A181BCD5B340042DC4C /* gesturesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gesturesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD528A181BCD5B340042DC4C /* lab6.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lab6.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD528A1C1BCD5B340042DC4C /* gesturesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gesturesUITests.swift; sourceTree = "<group>"; };
 		CD528A1E1BCD5B340042DC4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,9 +87,9 @@
 		CD5289FA1BCD5B340042DC4C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CD5289F91BCD5B340042DC4C /* gestures.app */,
-				CD528A0D1BCD5B340042DC4C /* gesturesTests.xctest */,
-				CD528A181BCD5B340042DC4C /* gesturesUITests.xctest */,
+				CD5289F91BCD5B340042DC4C /* lab6.app */,
+				CD528A0D1BCD5B340042DC4C /* lab6.xctest */,
+				CD528A181BCD5B340042DC4C /* lab6.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,9 +128,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CD5289F81BCD5B340042DC4C /* gestures */ = {
+		CD5289F81BCD5B340042DC4C /* lab6 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD528A211BCD5B340042DC4C /* Build configuration list for PBXNativeTarget "gestures" */;
+			buildConfigurationList = CD528A211BCD5B340042DC4C /* Build configuration list for PBXNativeTarget "lab6" */;
 			buildPhases = (
 				CD5289F51BCD5B340042DC4C /* Sources */,
 				CD5289F61BCD5B340042DC4C /* Frameworks */,
@@ -140,14 +140,14 @@
 			);
 			dependencies = (
 			);
-			name = gestures;
+			name = lab6;
 			productName = gestures;
-			productReference = CD5289F91BCD5B340042DC4C /* gestures.app */;
+			productReference = CD5289F91BCD5B340042DC4C /* lab6.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CD528A0C1BCD5B340042DC4C /* gesturesTests */ = {
+		CD528A0C1BCD5B340042DC4C /* lab6Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD528A241BCD5B340042DC4C /* Build configuration list for PBXNativeTarget "gesturesTests" */;
+			buildConfigurationList = CD528A241BCD5B340042DC4C /* Build configuration list for PBXNativeTarget "lab6Tests" */;
 			buildPhases = (
 				CD528A091BCD5B340042DC4C /* Sources */,
 				CD528A0A1BCD5B340042DC4C /* Frameworks */,
@@ -158,14 +158,14 @@
 			dependencies = (
 				CD528A0F1BCD5B340042DC4C /* PBXTargetDependency */,
 			);
-			name = gesturesTests;
+			name = lab6Tests;
 			productName = gesturesTests;
-			productReference = CD528A0D1BCD5B340042DC4C /* gesturesTests.xctest */;
+			productReference = CD528A0D1BCD5B340042DC4C /* lab6.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CD528A171BCD5B340042DC4C /* gesturesUITests */ = {
+		CD528A171BCD5B340042DC4C /* lab6UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD528A271BCD5B340042DC4C /* Build configuration list for PBXNativeTarget "gesturesUITests" */;
+			buildConfigurationList = CD528A271BCD5B340042DC4C /* Build configuration list for PBXNativeTarget "lab6UITests" */;
 			buildPhases = (
 				CD528A141BCD5B340042DC4C /* Sources */,
 				CD528A151BCD5B340042DC4C /* Frameworks */,
@@ -176,9 +176,9 @@
 			dependencies = (
 				CD528A1A1BCD5B340042DC4C /* PBXTargetDependency */,
 			);
-			name = gesturesUITests;
+			name = lab6UITests;
 			productName = gesturesUITests;
-			productReference = CD528A181BCD5B340042DC4C /* gesturesUITests.xctest */;
+			productReference = CD528A181BCD5B340042DC4C /* lab6.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -203,7 +203,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CD5289F41BCD5B340042DC4C /* Build configuration list for PBXProject "gestures" */;
+			buildConfigurationList = CD5289F41BCD5B340042DC4C /* Build configuration list for PBXProject "lab6" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -216,9 +216,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CD5289F81BCD5B340042DC4C /* gestures */,
-				CD528A0C1BCD5B340042DC4C /* gesturesTests */,
-				CD528A171BCD5B340042DC4C /* gesturesUITests */,
+				CD5289F81BCD5B340042DC4C /* lab6 */,
+				CD528A0C1BCD5B340042DC4C /* lab6Tests */,
+				CD528A171BCD5B340042DC4C /* lab6UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -281,12 +281,12 @@
 /* Begin PBXTargetDependency section */
 		CD528A0F1BCD5B340042DC4C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CD5289F81BCD5B340042DC4C /* gestures */;
+			target = CD5289F81BCD5B340042DC4C /* lab6 */;
 			targetProxy = CD528A0E1BCD5B340042DC4C /* PBXContainerItemProxy */;
 		};
 		CD528A1A1BCD5B340042DC4C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CD5289F81BCD5B340042DC4C /* gestures */;
+			target = CD5289F81BCD5B340042DC4C /* lab6 */;
 			targetProxy = CD528A191BCD5B340042DC4C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -399,7 +399,7 @@
 				INFOPLIST_FILE = gestures/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DawsonBotsford.gestures;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = lab6;
 			};
 			name = Debug;
 		};
@@ -410,7 +410,7 @@
 				INFOPLIST_FILE = gestures/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DawsonBotsford.gestures;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = lab6;
 			};
 			name = Release;
 		};
@@ -421,8 +421,8 @@
 				INFOPLIST_FILE = gesturesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DawsonBotsford.gesturesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gestures.app/gestures";
+				PRODUCT_NAME = lab6;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lab6.app/lab6";
 			};
 			name = Debug;
 		};
@@ -433,8 +433,8 @@
 				INFOPLIST_FILE = gesturesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DawsonBotsford.gesturesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gestures.app/gestures";
+				PRODUCT_NAME = lab6;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lab6.app/lab6";
 			};
 			name = Release;
 		};
@@ -444,7 +444,7 @@
 				INFOPLIST_FILE = gesturesUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DawsonBotsford.gesturesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = lab6;
 				TEST_TARGET_NAME = gestures;
 				USES_XCTRUNNER = YES;
 			};
@@ -456,7 +456,7 @@
 				INFOPLIST_FILE = gesturesUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DawsonBotsford.gesturesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = lab6;
 				TEST_TARGET_NAME = gestures;
 				USES_XCTRUNNER = YES;
 			};
@@ -465,7 +465,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CD5289F41BCD5B340042DC4C /* Build configuration list for PBXProject "gestures" */ = {
+		CD5289F41BCD5B340042DC4C /* Build configuration list for PBXProject "lab6" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD528A1F1BCD5B340042DC4C /* Debug */,
@@ -474,29 +474,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CD528A211BCD5B340042DC4C /* Build configuration list for PBXNativeTarget "gestures" */ = {
+		CD528A211BCD5B340042DC4C /* Build configuration list for PBXNativeTarget "lab6" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD528A221BCD5B340042DC4C /* Debug */,
 				CD528A231BCD5B340042DC4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		CD528A241BCD5B340042DC4C /* Build configuration list for PBXNativeTarget "gesturesTests" */ = {
+		CD528A241BCD5B340042DC4C /* Build configuration list for PBXNativeTarget "lab6Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD528A251BCD5B340042DC4C /* Debug */,
 				CD528A261BCD5B340042DC4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		CD528A271BCD5B340042DC4C /* Build configuration list for PBXNativeTarget "gesturesUITests" */ = {
+		CD528A271BCD5B340042DC4C /* Build configuration list for PBXNativeTarget "lab6UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD528A281BCD5B340042DC4C /* Debug */,
 				CD528A291BCD5B340042DC4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

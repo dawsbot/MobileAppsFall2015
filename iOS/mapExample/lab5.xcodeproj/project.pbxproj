@@ -36,17 +36,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CD48644B1BC6C6E90098EBE6 /* mapExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mapExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD48644B1BC6C6E90098EBE6 /* lab5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lab5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD48644E1BC6C6E90098EBE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD4864501BC6C6E90098EBE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD4864531BC6C6E90098EBE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD4864551BC6C6E90098EBE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD4864581BC6C6E90098EBE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD48645A1BC6C6E90098EBE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD48645F1BC6C6E90098EBE6 /* mapExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mapExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD48645F1BC6C6E90098EBE6 /* lab5.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lab5.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4864631BC6C6E90098EBE6 /* mapExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapExampleTests.swift; sourceTree = "<group>"; };
 		CD4864651BC6C6E90098EBE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD48646A1BC6C6E90098EBE6 /* mapExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mapExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD48646A1BC6C6E90098EBE6 /* lab5.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lab5.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD48646E1BC6C6E90098EBE6 /* mapExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapExampleUITests.swift; sourceTree = "<group>"; };
 		CD4864701BC6C6E90098EBE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD48647C1BC6C77E0098EBE6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -95,9 +95,9 @@
 		CD48644C1BC6C6E90098EBE6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CD48644B1BC6C6E90098EBE6 /* mapExample.app */,
-				CD48645F1BC6C6E90098EBE6 /* mapExampleTests.xctest */,
-				CD48646A1BC6C6E90098EBE6 /* mapExampleUITests.xctest */,
+				CD48644B1BC6C6E90098EBE6 /* lab5.app */,
+				CD48645F1BC6C6E90098EBE6 /* lab5.xctest */,
+				CD48646A1BC6C6E90098EBE6 /* lab5.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,9 +136,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CD48644A1BC6C6E90098EBE6 /* mapExample */ = {
+		CD48644A1BC6C6E90098EBE6 /* lab5 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD4864731BC6C6E90098EBE6 /* Build configuration list for PBXNativeTarget "mapExample" */;
+			buildConfigurationList = CD4864731BC6C6E90098EBE6 /* Build configuration list for PBXNativeTarget "lab5" */;
 			buildPhases = (
 				CD4864471BC6C6E90098EBE6 /* Sources */,
 				CD4864481BC6C6E90098EBE6 /* Frameworks */,
@@ -148,14 +148,14 @@
 			);
 			dependencies = (
 			);
-			name = mapExample;
+			name = lab5;
 			productName = mapExample;
-			productReference = CD48644B1BC6C6E90098EBE6 /* mapExample.app */;
+			productReference = CD48644B1BC6C6E90098EBE6 /* lab5.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CD48645E1BC6C6E90098EBE6 /* mapExampleTests */ = {
+		CD48645E1BC6C6E90098EBE6 /* lab5Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD4864761BC6C6E90098EBE6 /* Build configuration list for PBXNativeTarget "mapExampleTests" */;
+			buildConfigurationList = CD4864761BC6C6E90098EBE6 /* Build configuration list for PBXNativeTarget "lab5Tests" */;
 			buildPhases = (
 				CD48645B1BC6C6E90098EBE6 /* Sources */,
 				CD48645C1BC6C6E90098EBE6 /* Frameworks */,
@@ -166,14 +166,14 @@
 			dependencies = (
 				CD4864611BC6C6E90098EBE6 /* PBXTargetDependency */,
 			);
-			name = mapExampleTests;
+			name = lab5Tests;
 			productName = mapExampleTests;
-			productReference = CD48645F1BC6C6E90098EBE6 /* mapExampleTests.xctest */;
+			productReference = CD48645F1BC6C6E90098EBE6 /* lab5.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CD4864691BC6C6E90098EBE6 /* mapExampleUITests */ = {
+		CD4864691BC6C6E90098EBE6 /* lab5UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD4864791BC6C6E90098EBE6 /* Build configuration list for PBXNativeTarget "mapExampleUITests" */;
+			buildConfigurationList = CD4864791BC6C6E90098EBE6 /* Build configuration list for PBXNativeTarget "lab5UITests" */;
 			buildPhases = (
 				CD4864661BC6C6E90098EBE6 /* Sources */,
 				CD4864671BC6C6E90098EBE6 /* Frameworks */,
@@ -184,9 +184,9 @@
 			dependencies = (
 				CD48646C1BC6C6E90098EBE6 /* PBXTargetDependency */,
 			);
-			name = mapExampleUITests;
+			name = lab5UITests;
 			productName = mapExampleUITests;
-			productReference = CD48646A1BC6C6E90098EBE6 /* mapExampleUITests.xctest */;
+			productReference = CD48646A1BC6C6E90098EBE6 /* lab5.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -211,7 +211,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CD4864461BC6C6E90098EBE6 /* Build configuration list for PBXProject "mapExample" */;
+			buildConfigurationList = CD4864461BC6C6E90098EBE6 /* Build configuration list for PBXProject "lab5" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -224,9 +224,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CD48644A1BC6C6E90098EBE6 /* mapExample */,
-				CD48645E1BC6C6E90098EBE6 /* mapExampleTests */,
-				CD4864691BC6C6E90098EBE6 /* mapExampleUITests */,
+				CD48644A1BC6C6E90098EBE6 /* lab5 */,
+				CD48645E1BC6C6E90098EBE6 /* lab5Tests */,
+				CD4864691BC6C6E90098EBE6 /* lab5UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -289,12 +289,12 @@
 /* Begin PBXTargetDependency section */
 		CD4864611BC6C6E90098EBE6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CD48644A1BC6C6E90098EBE6 /* mapExample */;
+			target = CD48644A1BC6C6E90098EBE6 /* lab5 */;
 			targetProxy = CD4864601BC6C6E90098EBE6 /* PBXContainerItemProxy */;
 		};
 		CD48646C1BC6C6E90098EBE6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CD48644A1BC6C6E90098EBE6 /* mapExample */;
+			target = CD48644A1BC6C6E90098EBE6 /* lab5 */;
 			targetProxy = CD48646B1BC6C6E90098EBE6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -407,7 +407,7 @@
 				INFOPLIST_FILE = mapExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DawsonBotsford.mapExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = lab5;
 			};
 			name = Debug;
 		};
@@ -418,7 +418,7 @@
 				INFOPLIST_FILE = mapExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DawsonBotsford.mapExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = lab5;
 			};
 			name = Release;
 		};
@@ -429,8 +429,8 @@
 				INFOPLIST_FILE = mapExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DawsonBotsford.mapExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mapExample.app/mapExample";
+				PRODUCT_NAME = lab5;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lab5.app/lab5";
 			};
 			name = Debug;
 		};
@@ -441,8 +441,8 @@
 				INFOPLIST_FILE = mapExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DawsonBotsford.mapExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mapExample.app/mapExample";
+				PRODUCT_NAME = lab5;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lab5.app/lab5";
 			};
 			name = Release;
 		};
@@ -452,7 +452,7 @@
 				INFOPLIST_FILE = mapExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DawsonBotsford.mapExampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = lab5;
 				TEST_TARGET_NAME = mapExample;
 				USES_XCTRUNNER = YES;
 			};
@@ -464,7 +464,7 @@
 				INFOPLIST_FILE = mapExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DawsonBotsford.mapExampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = lab5;
 				TEST_TARGET_NAME = mapExample;
 				USES_XCTRUNNER = YES;
 			};
@@ -473,7 +473,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CD4864461BC6C6E90098EBE6 /* Build configuration list for PBXProject "mapExample" */ = {
+		CD4864461BC6C6E90098EBE6 /* Build configuration list for PBXProject "lab5" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD4864711BC6C6E90098EBE6 /* Debug */,
@@ -482,29 +482,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CD4864731BC6C6E90098EBE6 /* Build configuration list for PBXNativeTarget "mapExample" */ = {
+		CD4864731BC6C6E90098EBE6 /* Build configuration list for PBXNativeTarget "lab5" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD4864741BC6C6E90098EBE6 /* Debug */,
 				CD4864751BC6C6E90098EBE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		CD4864761BC6C6E90098EBE6 /* Build configuration list for PBXNativeTarget "mapExampleTests" */ = {
+		CD4864761BC6C6E90098EBE6 /* Build configuration list for PBXNativeTarget "lab5Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD4864771BC6C6E90098EBE6 /* Debug */,
 				CD4864781BC6C6E90098EBE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		CD4864791BC6C6E90098EBE6 /* Build configuration list for PBXNativeTarget "mapExampleUITests" */ = {
+		CD4864791BC6C6E90098EBE6 /* Build configuration list for PBXNativeTarget "lab5UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD48647A1BC6C6E90098EBE6 /* Debug */,
 				CD48647B1BC6C6E90098EBE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
