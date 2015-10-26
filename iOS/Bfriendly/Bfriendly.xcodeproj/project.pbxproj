@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD0B971C1BDEDED9004D2551 /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0B971B1BDEDED9004D2551 /* SweetAlert.swift */; settings = {ASSET_TAGS = (); }; };
 		CD3305C31BBAE7CB00BBA9B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3305C21BBAE7CB00BBA9B3 /* AppDelegate.swift */; };
 		CD3305C51BBAE7CB00BBA9B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3305C41BBAE7CB00BBA9B3 /* ViewController.swift */; };
 		CD3305C81BBAE7CB00BBA9B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3305C61BBAE7CB00BBA9B3 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD0B971B1BDEDED9004D2551 /* SweetAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetAlert.swift; sourceTree = "<group>"; };
 		CD3305BF1BBAE7CB00BBA9B3 /* Bfriendly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bfriendly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD3305C21BBAE7CB00BBA9B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD3305C41BBAE7CB00BBA9B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		CD3305C11BBAE7CB00BBA9B3 /* Bfriendly */ = {
 			isa = PBXGroup;
 			children = (
+				CD0B971B1BDEDED9004D2551 /* SweetAlert.swift */,
 				CDE1E00C1BBDA50400056C2B /* fontawesome-webfont.ttf */,
 				CD3305C21BBAE7CB00BBA9B3 /* AppDelegate.swift */,
 				CD3305C41BBAE7CB00BBA9B3 /* ViewController.swift */,
@@ -261,6 +264,7 @@
 			files = (
 				CD3305C51BBAE7CB00BBA9B3 /* ViewController.swift in Sources */,
 				CD3305C31BBAE7CB00BBA9B3 /* AppDelegate.swift in Sources */,
+				CD0B971C1BDEDED9004D2551 /* SweetAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
