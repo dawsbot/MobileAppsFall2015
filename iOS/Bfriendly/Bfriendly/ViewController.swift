@@ -5,7 +5,8 @@
 //  Created by Dawson Botsford on 9/29/15.
 //  Copyright © 2015 Dawson Botsford. All rights reserved.
 //
-// Learned contact saving from the turorial: http://www.appcoda.com/ios-contacts-framework/
+// Learned contact saving from the turorial: https://www.appsfoundation.com/post/create-edit-contacts-with-ios-9-contacts-ui-framework
+//SweetAlert from https://github.com/codestergit/SweetAlert-iOS
 
 
 import UIKit
