@@ -14,10 +14,6 @@ import Contacts
 func getAppDelegate() -> AppDelegate {
     return UIApplication.sharedApplication().delegate as! AppDelegate
 }
-/*
-class func sharedDelegate() -> AppDelegate {
-    return UIApplication.sharedApplication().delegate as! AppDelegate
-}*/
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
@@ -28,13 +24,34 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var phoneNumberField: UITextField!
     
     @IBAction func bfriendButton(sender: UIButton) {
-        //get text from all three briend fields
+        let newContact = CNMutableContact()
         
+        //get text from all three briend fields
+        newContact.givenName = nameField.text!
+        
+        let email = CNLabeledValue(label: CNLabelWork, value:emailField.text!)
+        newContact.emailAddresses = [email]
+        
+        let phone = CNLabeledValue(label: CNLabelWork, value:CNPhoneNumber(stringValue: phoneNumberField.text!))
+        newContact.phoneNumbers = [phone]
         
         //save new contact to common address book
+        let request = CNSaveRequest()
+        request.addContact(newContact, toContainerWithIdentifier: nil)
+        do{
+            
+            try store.executeSaveRequest(request)
+            //alert user of saved contact success
+            SweetAlert().showAlert("Good job!", subTitle: "Contact saved successfully", style: AlertStyle.Success)
+            
+        } catch let error{
+            
+            print(error)
+            //alert user of saved contact fail
+            SweetAlert().showAlert("Yikes!", subTitle: "Bfriendly could not save the contact. Perhaps your input is malformed?", style: AlertStyle.Error)
+            
+        }
         
-        
-        //alert user of saved contact
     }
     
     
