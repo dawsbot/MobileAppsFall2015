@@ -5,9 +5,19 @@
 //  Created by Dawson Botsford on 9/29/15.
 //  Copyright © 2015 Dawson Botsford. All rights reserved.
 //
+// Learned contact saving from the turorial: http://www.appcoda.com/ios-contacts-framework/
+
 
 import UIKit
-import AddressBook
+import Contacts
+
+func getAppDelegate() -> AppDelegate {
+    return UIApplication.sharedApplication().delegate as! AppDelegate
+}
+/*
+class func sharedDelegate() -> AppDelegate {
+    return UIApplication.sharedApplication().delegate as! AppDelegate
+}*/
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
@@ -17,11 +27,42 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var emailField: UITextField!
     @IBOutlet var phoneNumberField: UITextField!
     
-    //Request address book access
-    //let authorizationStatus = ABAddressBookGetAuthorizationStatus()
-    let authorizationStatus = ABAddressBookGetAuthorizationStatus()
+    @IBAction func bfriendButton(sender: UIButton) {
+        //get text from all three briend fields
+        
+        
+        //save new contact to common address book
+        
+        
+        //alert user of saved contact
+    }
     
     
+    var store = CNContactStore()
+    
+    
+    func checkAccessStatus(completionHandler: (accessGranted: Bool) -> Void) {
+        let authorizationStatus = CNContactStore.authorizationStatusForEntityType(CNEntityType.Contacts)
+        
+        switch authorizationStatus {
+        case .Authorized:
+            completionHandler(accessGranted: true)
+        case .Denied, .NotDetermined:
+            self.store.requestAccessForEntityType(CNEntityType.Contacts, completionHandler: { (access, accessError) -> Void in
+                if access {
+                    completionHandler(accessGranted: access)
+                } else {
+                    print("access denied")
+                }
+            })
+        default:
+            completionHandler(accessGranted: false)
+        }
+    }
+    /*
+    class func sharedDelegate() -> AppDelegate {
+        return UIApplication.sharedApplication().delegate as! AppDelegate
+    }*/
     
     func dismissKeyboard() {
         view.endEditing(true)
@@ -39,20 +80,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let tap = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
         
-        
-        
-        switch authorizationStatus {
-        case .Denied, .Restricted:
-            //1
-            print("Denied")
-        case .Authorized:
-            //2
-            print("Authorized")
-        case .NotDetermined:
-            //3
-            print("Not Determined")
-        }
-        
+        //check for contacts permissions
+        checkAccessStatus({ (accessGranted) -> Void in
+            print(accessGranted)
+        })
+
     }
     
     
