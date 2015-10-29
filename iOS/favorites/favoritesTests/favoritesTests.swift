@@ -2,12 +2,12 @@
 //  favoritesTests.swift
 //  favoritesTests
 //
-//  Created by Dawson Botsford on 10/20/15.
-//  Copyright © 2015 Dawson Botsford. All rights reserved.
+//  Created by Aileen Pierce on 10/2/14.
+//  Copyright (c) 2014 Aileen Pierce. All rights reserved.
 //
 
+import UIKit
 import XCTest
-@testable import favorites
 
 class favoritesTests: XCTestCase {
     
@@ -23,12 +23,12 @@ class favoritesTests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCTAssert(true, "Pass")
     }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock {
+        self.measureBlock() {
             // Put the code you want to measure the time of here.
         }
     }
