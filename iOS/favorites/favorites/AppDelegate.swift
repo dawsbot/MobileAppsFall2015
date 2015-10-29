@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  favorites
 //
-//  Created by Dawson Botsford on 10/20/15.
-//  Copyright © 2015 Dawson Botsford. All rights reserved.
+//  Created by Dawson Botsford on 10/2/14.
+//  Copyright (c) 2015 Dawson Botsford. All rights reserved.
 //
 
 import UIKit

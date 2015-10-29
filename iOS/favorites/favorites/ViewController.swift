@@ -2,19 +2,21 @@
 //  ViewController.swift
 //  favorites
 //
-//  Created by Dawson Botsford on 10/20/15.
-//  Copyright © 2015 Dawson Botsford. All rights reserved.
-//
+//  Dawson Botsford
 
 import UIKit
 
 class ViewController: UIViewController {
 
-    @IBAction func unwindSegue (segue:UIStoryboardSegue){
-    }
-    
     @IBOutlet weak var bookLabel: UILabel!
-    @IBOutlet weak var authoLabel: UILabel!
+    @IBOutlet weak var authorLabel: UILabel!
+    
+    var user=Name()
+    
+    @IBAction func unwindSegue (segue:UIStoryboardSegue){
+        bookLabel.text=user.firstName
+        authorLabel.text=user.lastName
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
