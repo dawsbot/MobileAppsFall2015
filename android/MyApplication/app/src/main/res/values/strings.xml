@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Climber</string>
+    <string name="welcome">Welcome</string>
+    <string name="action_settings">Settings</string>
+    <string name="send_it">Send it!</string>
+    <string name="name_edit">Name</string>
+
+    <string-array name="climbTypes">
+        <item>Boulder</item>
+        <item>Sport Climb</item>
+        <item>Trad Climb</item>
+    </string-array>
+</resources>
