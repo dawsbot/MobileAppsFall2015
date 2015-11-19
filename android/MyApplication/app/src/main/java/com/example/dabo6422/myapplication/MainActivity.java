@@ -1,14 +1,17 @@
 package com.example.dabo6422.myapplication;
 
 import android.app.Activity;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
 
 public class MainActivity extends Activity {
@@ -35,12 +38,20 @@ public class MainActivity extends Activity {
 
         }
 
+        ToggleButton toggleButton = (ToggleButton) findViewById(R.id.toggleButton);
+        boolean isScared = toggleButton.isChecked();
+
+        String scared = "are";
+        if (!isScared){
+            scared += " not";
+        }
+
         String nameValue = String.valueOf(nameField.getText());
 
         String climbTypeValue = String.valueOf(climbTypeSpinner.getSelectedItem());
 
 
-        output.setText("Hello " + nameValue + ", I see you like to "  + climbTypeValue + " at " + gymValue + ".");
+        output.setText("Hello " + nameValue + ", I see you like to "  + climbTypeValue + " at " + gymValue + ".\n I see also that you " + scared + " scared of heights.");
 
 
 
@@ -50,6 +61,10 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ImageView myImage = (ImageView) findViewById(R.id.image);
+        myImage.setImageResource(R.drawable.climb1);
+
     }
 
     @Override
