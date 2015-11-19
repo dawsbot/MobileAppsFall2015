@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -17,11 +18,29 @@ public class MainActivity extends Activity {
         TextView output = (TextView) findViewById(R.id.final_output);
         Spinner climbTypeSpinner = (Spinner) findViewById(R.id.spinner);
 
+        RadioGroup gyms = (RadioGroup) findViewById(R.id.radioGroupID);
+        int gym_id = gyms.getCheckedRadioButtonId();
+        String gymValue = "no gym";
+
+        switch(gym_id){
+            case R.id.gym1:
+                gymValue = "the BRC";
+                break;
+            case R.id.gym2:
+                gymValue = "the Spot";
+                break;
+            case R.id.gym3:
+                gymValue = "Movement";
+                break;
+
+        }
+
         String nameValue = String.valueOf(nameField.getText());
 
         String climbTypeValue = String.valueOf(climbTypeSpinner.getSelectedItem());
 
-        output.setText("Hello " + nameValue + ", I see you like to "  + climbTypeValue + ".");
+
+        output.setText("Hello " + nameValue + ", I see you like to "  + climbTypeValue + " at " + gymValue + ".");
 
 
 
