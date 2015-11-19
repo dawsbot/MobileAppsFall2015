@@ -15,4 +15,7 @@
     <string name="gym2_radio">Spot</string>
     <string name="gym3_radio">Movement</string>
 
+    <string name="toggle_on">Afraid of heights</string>
+    <string name="toggle_off">Not afraid of heights</string>
+
 </resources>
