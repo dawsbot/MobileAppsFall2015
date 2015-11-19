@@ -13,7 +13,7 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
 
     public void findPreference(View view) {
-        EditText nameField = (EditText)findViewById(R.id.name_editText);
+        EditText nameField = (EditText)findViewById(R.id.nameEditText);
         TextView output = (TextView) findViewById(R.id.final_output);
         Spinner climbTypeSpinner = (Spinner) findViewById(R.id.spinner);
 
