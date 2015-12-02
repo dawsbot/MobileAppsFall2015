@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Climber</string>
+    <string name="welcome">Let\'s hope you\'re a climber</string>
+    <string name="action_settings">Settings</string>
+    <string name="send_it">Send it!</string>
+    <string name="name_edit">Name</string>
+
+    <string-array name="climbTypes">
+        <item>Boulder</item>
+        <item>Sport Climb</item>
+        <item>Trad Climb</item>
+    </string-array>
+
+    <string name="gym1_radio">BRC</string>
+    <string name="gym2_radio">Spot</string>
+    <string name="gym3_radio">Movement</string>
+
+    <string name="toggle_on">Afraid of heights</string>
+    <string name="toggle_off">Not afraid of heights</string>
+
+</resources>
