@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffb5faff"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView android:text="@string/welcome" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcomeTextView"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name_edit"
+        android:id="@+id/nameEditText"
+        android:layout_weight="1"
+        android:layout_below="@+id/welcomeTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_below="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButtonLayout">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_below="@+id/radioButtonLayout"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/radioGroupID">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gym1_radio"
+                android:id="@+id/gym1"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gym2_radio"
+                android:id="@+id/gym2"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gym3_radio"
+                android:id="@+id/gym3"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:entries="@array/climbTypes"
+        android:layout_below="@+id/radioButtonLayout"
+        android:layout_centerHorizontal="true" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:textOn="@string/toggle_on"
+        android:textOff="@string/toggle_off"
+        android:id="@+id/toggleButton"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_it"
+        android:onClick="findPreference"
+        android:id="@+id/button"
+        android:layout_below="@id/toggleButton"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="yo"
+        android:id="@+id/final_output"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"
+        android:layout_below="@id/final_output"/>
+
+
+</RelativeLayout>
