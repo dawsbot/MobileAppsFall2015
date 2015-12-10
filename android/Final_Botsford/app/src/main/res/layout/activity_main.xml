@@ -64,5 +64,12 @@
         android:textOn="@string/toggle_on"
         android:textOff="@string/toggle_off"/>
 
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sauce_color"
+        android:entries="@array/size_spinner"
+        android:id="@+id/size_spinner">
 
+    </Spinner>
 </RelativeLayout>
