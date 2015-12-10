@@ -3,4 +3,12 @@
 
     <string name="toggle_on">Red Sauce</string>
     <string name="toggle_off">White Sauce</string>
+
+    <string-array name="size_spinner">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
+
 </resources>
