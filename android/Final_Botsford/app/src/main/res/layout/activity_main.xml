@@ -56,5 +56,13 @@
         android:id="@+id/gluten_free"
         android:layout_below="@+id/pizzaName" />
 
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sauce_color"
+        android:layout_below="@+id/gluten_free"
+        android:textOn="@string/toggle_on"
+        android:textOff="@string/toggle_off"/>
+
 
 </RelativeLayout>
