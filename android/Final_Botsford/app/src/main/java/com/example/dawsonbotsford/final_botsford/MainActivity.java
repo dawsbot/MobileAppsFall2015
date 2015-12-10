@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,17 +28,22 @@ public class MainActivity extends AppCompatActivity {
         boolean choice = gf_Switch.isChecked();
 
         if (choice) {
-            return "is a gluten free pizza";
+            return "gluten-free pizza";
         }
         else {
-            return "is a gluent-free's ENEMY";
+            return "gluten-free eater's ENEMY";
         }
+    }
+
+    public String getSauce(){
+        ToggleButton sauce_Button = (ToggleButton) findViewById(R.id.sauce_color);
+        return sauce_Button.getText().toString();
     }
 
     public void buildPizza(View v){
         String phrase;
 
-        phrase = "Your pizza is called the " + getPizzaName() + ". It " + getGlutenFree();
+        phrase = "Your pizza is called the " + getPizzaName() + ". It has " + getSauce() + " and is clearly healthy because it is a " + getGlutenFree();
 
         TextView final_phrase_EditText = (TextView) findViewById(R.id.finalPhrase);
         final_phrase_EditText.setText(phrase);
