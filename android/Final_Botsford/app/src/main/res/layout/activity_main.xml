@@ -28,7 +28,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:text="mountain"
-        android:hint="Pizza name"/>
+        android:hint="Pizza name"
+        />
 
     <Button
         android:layout_width="wrap_content"
@@ -37,7 +38,8 @@
         android:id="@+id/button"
         android:onClick="buildPizza"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -54,7 +56,8 @@
         android:layout_height="wrap_content"
         android:text="Gluten-Free"
         android:id="@+id/gluten_free"
-        android:layout_below="@+id/pizzaName" />
+        android:layout_below="@+id/pizzaName"
+        android:layout_marginTop="6dp"/>
 
     <ToggleButton
         android:layout_width="wrap_content"
@@ -69,7 +72,30 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/sauce_color"
         android:entries="@array/size_spinner"
-        android:id="@+id/size_spinner">
-
+        android:id="@+id/size_spinner"
+        android:layout_marginTop="6dp">
     </Spinner>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/size_spinner"
+        android:id="@+id/thickness_radio">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/thin_crust"
+            android:text="@string/thin"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/thick_crust"
+            android:text="@string/thick"
+            />
+
+    </RadioGroup>
+
 </RelativeLayout>

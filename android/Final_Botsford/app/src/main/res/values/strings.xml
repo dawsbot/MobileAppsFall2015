@@ -10,5 +10,7 @@
         <item>Large</item>
     </string-array>
 
+    <string name="thin">Thin</string>
+    <string name="thick">Thick</string>
 
 </resources>

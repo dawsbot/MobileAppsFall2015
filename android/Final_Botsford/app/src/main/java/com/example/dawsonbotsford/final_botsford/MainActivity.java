@@ -1,9 +1,11 @@
 package com.example.dawsonbotsford.final_botsford;
 
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -29,10 +31,10 @@ public class MainActivity extends AppCompatActivity {
         boolean choice = gf_Switch.isChecked();
 
         if (choice) {
-            return "gluten-free pizza";
+            return "gluten-free";
         }
         else {
-            return "gluten-free eater's ENEMY";
+            return "GLUTEN";
         }
     }
 
@@ -42,15 +44,27 @@ public class MainActivity extends AppCompatActivity {
         return sauce_Button.getText().toString();
     }
 
+    //Get the user's choice for pizza size from the Spinner
     private String getSize(){
         Spinner size_Spinner = (Spinner) findViewById(R.id.size_spinner);
         return size_Spinner.getSelectedItem().toString();
     }
 
+    //Get the user's choice for crust thickness from the radio group
+    private String getCrustThickness() {
+        RadioGroup crust_Radio = (RadioGroup) findViewById(R.id.thickness_radio);
+        switch (crust_Radio.getCheckedRadioButtonId()){
+            case R.id.thin_crust:
+                return "thin";
+            default:
+                return "thick";
+        }
+    }
+
     public void buildPizza(View v){
         String phrase;
 
-        phrase = "Your " + getSize() + " pizza is called the " + getPizzaName() + ". It has " + getSauce() + " and is clearly healthy because it is a " + getGlutenFree();
+        phrase = "Your " + getSize() + " pizza is called the " + getPizzaName() + ". It is a " + getCrustThickness() + " crust pizza and has " + getSauce() + ". It is clearly healthy because it is a " + getGlutenFree() + " pizza.";
 
         TextView final_phrase_EditText = (TextView) findViewById(R.id.finalPhrase);
         final_phrase_EditText.setText(phrase);
