@@ -37,9 +37,8 @@
         android:text="Build it!"
         android:id="@+id/button"
         android:onClick="buildPizza"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="6dp"/>
+        android:layout_below="@+id/thickness_radio"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -73,7 +72,9 @@
         android:layout_below="@id/sauce_color"
         android:entries="@array/size_spinner"
         android:id="@+id/size_spinner"
-        android:layout_marginTop="6dp">
+        android:layout_marginTop="6dp"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button">
     </Spinner>
 
     <RadioGroup
@@ -97,5 +98,15 @@
             />
 
     </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suggest Pizza Shop for me!"
+        android:id="@+id/suggest_shop"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="suggestShop"/>
 
 </RelativeLayout>

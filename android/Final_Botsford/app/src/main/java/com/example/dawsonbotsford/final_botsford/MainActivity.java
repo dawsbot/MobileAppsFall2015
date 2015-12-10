@@ -1,5 +1,6 @@
 package com.example.dawsonbotsford.final_botsford;
 
+import android.content.Intent;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -69,5 +70,29 @@ public class MainActivity extends AppCompatActivity {
         TextView final_phrase_EditText = (TextView) findViewById(R.id.finalPhrase);
         final_phrase_EditText.setText(phrase);
 
+    }
+
+
+    private PizzaShop myShop = new PizzaShop();
+
+    public void suggestShop(View view) {
+
+        String thickness = getCrustThickness();
+
+        if (thickness == "thin") {
+            myShop.setPizzaShop("Pizzeria Locale");
+            myShop.setGetPizzaShopURL("http://localeboulder.com");
+        }
+        else {
+            myShop.setPizzaShop("Old C's");
+            myShop.setGetPizzaShopURL("http://oldchicago.com");
+        }
+
+        Intent intent = new Intent(this, ReceiveShop.class);
+
+        intent.putExtra("pizzaShopName", myShop.getPizzaShop());
+        intent.putExtra("pizzaShopURL", myShop.getGetPizzaShopURL());
+
+        startActivity(intent);
     }
 }
