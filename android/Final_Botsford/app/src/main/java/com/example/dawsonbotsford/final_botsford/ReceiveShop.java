@@ -32,7 +32,7 @@ public class ReceiveShop extends AppCompatActivity {
 
         updateText();
     }
-    
+
     public void openInBrowser(View view){
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse(shopURL));
