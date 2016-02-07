@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD0B971C1BDEDED9004D2551 /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0B971B1BDEDED9004D2551 /* SweetAlert.swift */; settings = {ASSET_TAGS = (); }; };
+		CD0B971C1BDEDED9004D2551 /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0B971B1BDEDED9004D2551 /* SweetAlert.swift */; };
 		CD3305C31BBAE7CB00BBA9B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3305C21BBAE7CB00BBA9B3 /* AppDelegate.swift */; };
 		CD3305C51BBAE7CB00BBA9B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3305C41BBAE7CB00BBA9B3 /* ViewController.swift */; };
 		CD3305C81BBAE7CB00BBA9B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3305C61BBAE7CB00BBA9B3 /* Main.storyboard */; };
@@ -15,7 +15,7 @@
 		CD3305CD1BBAE7CB00BBA9B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3305CB1BBAE7CB00BBA9B3 /* LaunchScreen.storyboard */; };
 		CD3305D81BBAE7CB00BBA9B3 /* BfriendlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3305D71BBAE7CB00BBA9B3 /* BfriendlyTests.swift */; };
 		CD3305E31BBAE7CB00BBA9B3 /* BfriendlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3305E21BBAE7CB00BBA9B3 /* BfriendlyUITests.swift */; };
-		CDE1E00D1BBDA50400056C2B /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDE1E00C1BBDA50400056C2B /* fontawesome-webfont.ttf */; settings = {ASSET_TAGS = (); }; };
+		CDE1E00D1BBDA50400056C2B /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDE1E00C1BBDA50400056C2B /* fontawesome-webfont.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 		CD3305DE1BBAE7CB00BBA9B3 /* BfriendlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BfriendlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD3305E21BBAE7CB00BBA9B3 /* BfriendlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BfriendlyUITests.swift; sourceTree = "<group>"; };
 		CD3305E41BBAE7CB00BBA9B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CDE1E00C1BBDA50400056C2B /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "fontawesome-webfont.ttf"; path = "../../../../../Downloads/font-awesome-4.4.0 2/fonts/fontawesome-webfont.ttf"; sourceTree = "<group>"; };
+		CDE1E00C1BBDA50400056C2B /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
