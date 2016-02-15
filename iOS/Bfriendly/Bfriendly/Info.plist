@@ -26,12 +26,18 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>"fontawesome-webfont.ttf"</string>
+		<string>&quot;fontawesome-webfont.ttf&quot;</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>NSHumanReadableCopyright</key>
+	<string></string>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
+	<key>CFBundleDisplayName</key>
+	<string></string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

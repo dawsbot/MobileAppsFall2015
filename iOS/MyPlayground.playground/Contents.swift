@@ -2,8 +2,7 @@
 
 import UIKit
 
-var str = "Hello, playground"
+var diver = 1;
+diver += 1;
 
-for count in 0...5 {
-    print("yo " + String(count))
-}
+var dive = [1,2,3,4]

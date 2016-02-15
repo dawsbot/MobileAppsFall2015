@@ -15,6 +15,7 @@
 		CD3305CD1BBAE7CB00BBA9B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3305CB1BBAE7CB00BBA9B3 /* LaunchScreen.storyboard */; };
 		CD3305D81BBAE7CB00BBA9B3 /* BfriendlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3305D71BBAE7CB00BBA9B3 /* BfriendlyTests.swift */; };
 		CD3305E31BBAE7CB00BBA9B3 /* BfriendlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3305E21BBAE7CB00BBA9B3 /* BfriendlyUITests.swift */; };
+		CDABA50D1C6FF92000825B6E /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDABA50C1C6FF92000825B6E /* MainNavigationController.swift */; };
 		CDE1E00D1BBDA50400056C2B /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDE1E00C1BBDA50400056C2B /* fontawesome-webfont.ttf */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		CD3305DE1BBAE7CB00BBA9B3 /* BfriendlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BfriendlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD3305E21BBAE7CB00BBA9B3 /* BfriendlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BfriendlyUITests.swift; sourceTree = "<group>"; };
 		CD3305E41BBAE7CB00BBA9B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDABA50C1C6FF92000825B6E /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		CDE1E00C1BBDA50400056C2B /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 				CD3305C91BBAE7CB00BBA9B3 /* Assets.xcassets */,
 				CD3305CB1BBAE7CB00BBA9B3 /* LaunchScreen.storyboard */,
 				CD3305CE1BBAE7CB00BBA9B3 /* Info.plist */,
+				CDABA50C1C6FF92000825B6E /* MainNavigationController.swift */,
 			);
 			path = Bfriendly;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				TargetAttributes = {
 					CD3305BE1BBAE7CB00BBA9B3 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 7M8FTZA845;
 					};
 					CD3305D21BBAE7CB00BBA9B3 = {
 						CreatedOnToolsVersion = 7.0;
@@ -264,6 +268,7 @@
 			files = (
 				CD3305C51BBAE7CB00BBA9B3 /* ViewController.swift in Sources */,
 				CD3305C31BBAE7CB00BBA9B3 /* AppDelegate.swift in Sources */,
+				CDABA50D1C6FF92000825B6E /* MainNavigationController.swift in Sources */,
 				CD0B971C1BDEDED9004D2551 /* SweetAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,11 +409,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Bfriendly/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DawsonBotsford.Bfriendly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -416,11 +424,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Bfriendly/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DawsonBotsford.Bfriendly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
