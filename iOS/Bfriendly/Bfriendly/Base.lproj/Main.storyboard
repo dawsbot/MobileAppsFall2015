@@ -142,12 +142,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5UX-ZN-aNu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1931" y="337"/>
+            <point key="canvasLocation" x="2091" y="337"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Main Navigation Controller-->
         <scene sceneID="CEZ-Ac-ds9">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WBQ-Vz-kQb" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WBQ-Vz-kQb" customClass="MainNavigationController" customModule="Bfriendly" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="drN-6C-MxP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

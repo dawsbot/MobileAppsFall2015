@@ -55,7 +55,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    
     var store = CNContactStore()
     
     
